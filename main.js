@@ -6,7 +6,7 @@ function saveToSync(id, value) {
 
 function onSyncError(error) {
     if (error) {
-        alert(`Error: ${error}`);
+        console.log(`myshowsAT Error: ${error}`);
     }
 }
 
