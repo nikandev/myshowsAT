@@ -49,7 +49,7 @@ async function addSubTitles() {
         let subtitle = document.createElement("subtitle");
         subtitle.id = show.id;
         subtitle.style.color = 'gray';
-        subtitle.innerHTML = "set subtitle";
+        subtitle.innerHTML = "set subtitle (альтернативное название)";
         subtitle.onclick = editData;
 
         loadFromSync(subtitle);

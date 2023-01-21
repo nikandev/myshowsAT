@@ -1,7 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 48 48"
-  width="48"
-  height="48">
+   viewBox="0 0 48 48"
+   width="48"
+   height="48"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="14.760854"
+     inkscape:cx="5.5552341"
+     inkscape:cy="24.117846"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:4.06252;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;fill-opacity:1"
+     id="rect906"
+     width="42.317932"
+     height="30.856827"
+     x="2.8410332"
+     y="14.257215"
+     ry="8.0067606" />
+  <rect
+     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.01993;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     id="rect5091"
+     width="29.790974"
+     height="2.2088435"
+     x="11.574586"
+     y="33.367065"
+     ry="1.1044217" />
+  <rect
+     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.01993;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     id="rect1374"
+     width="29.790974"
+     height="2.2088435"
+     x="11.574586"
+     y="37.768154"
+     ry="1.1044217" />
+  <rect
+     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.01993;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     id="rect1376"
+     width="29.790974"
+     height="2.2088435"
+     x="11.574586"
+     y="42.169243"
+     ry="1.1044217" />
   <!-- your svg content -->
+  <rect
+     style="fill:none;stroke:#d11313;stroke-width:4.06252;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     id="rect110"
+     width="42.317932"
+     height="30.856827"
+     x="2.8410332"
+     y="14.257215"
+     ry="8.0067606" />
+  <path
+     id="path283"
+     style="fill:#d11313;stroke-width:1.34507;fill-opacity:1"
+     d="m 23.988282,6.4200155 a 7.568862,5.2988734 0 0 0 -7.529297,4.8791485 h 14.619141 c 0.05142,0 0.1023,8.84e-4 0.152343,0.0065 0.05004,0.0056 0.100015,0.01487 0.148438,0.02567 0.04842,0.01084 0.09602,0.02485 0.142578,0.04064 0.0067,0.0023 0.01283,0.0061 0.01953,0.0085 A 7.568862,5.2988734 0 0 0 23.988282,6.4200155 Z" />
+  <rect
+     style="fill:#d11313;stroke-width:0.619414;fill-opacity:1"
+     id="rect288"
+     width="1.7245508"
+     height="9.0059872"
+     x="4.6516871"
+     y="9.0551052"
+     ry="0.51692528"
+     transform="rotate(-47.268906)" />
+  <rect
+     style="fill:#d11313;stroke-width:0.619414;fill-opacity:1"
+     id="rect1693"
+     width="1.7245508"
+     height="9.0059872"
+     x="-27.854105"
+     y="-26.13275"
+     ry="0.51692528"
+     transform="matrix(-0.6785584,-0.73454645,-0.73454645,0.6785584,0,0)" />
+  <text
+     xml:space="preserve"
+     style="font-size:8px;fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:0.233986;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+     x="6.0151267"
+     y="24.559471"
+     id="text2796"><tspan
+       sodipodi:role="line"
+       id="tspan2794"
+       x="6.0151267"
+       y="24.559471"
+       style="font-size:8px;fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:0.233986;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">MyShow</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:6.23963px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.233986;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     x="6.4865165"
+     y="31.32156"
+     id="text3160"><tspan
+       sodipodi:role="line"
+       id="tspan3158"
+       x="6.4865165"
+       y="31.32156"
+       style="font-size:6.23963px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.233986;stroke-opacity:1">見せる</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:1.1;paint-order:stroke fill markers"
+     x="59.684895"
+     y="43.425671"
+     id="text2953"><tspan
+       sodipodi:role="line"
+       id="tspan2951"></tspan></text>
 </svg>
