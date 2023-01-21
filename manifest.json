@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "MyshowsAT",
+  "version": "1.0",
+
+  "description": "Firefox add-on that adds the ability to add alternative titles to your shows",
+  "homepage_url": "https://github.com/nikandev/myshowsAT",
+
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon@2x.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://myshows.me/profile/"],
+      "js": ["main.js"]
+    }
+  ]
+  
+}
