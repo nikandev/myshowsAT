@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "MyshowsAT",
+  "name": "Myshows Alternative Titles",
   "version": "1.0",
 
   "description": "Firefox add-on that adds the ability to add alternative titles to your shows",
