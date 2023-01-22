@@ -12,7 +12,7 @@ function removeFromSync(id) {
 
 function onSyncError(error) {
     if (error) {
-        console.log(`myshowsAT Error: ${error}`);
+        console.warn(`myshowsAT Error: ${error}`);
     }
 }
 
@@ -70,32 +70,25 @@ function editData(event) {
 }
 
 function loadSubtitles() {
-    console.log("loading subs");
     var observedElement = mainContainer.querySelector('.ProfileShows-list');
 
     if (!observedElement) {
-        console.log("no observed element");
         return;
     }
 
     var shows = observedElement.querySelectorAll('div[id^="s"]');
 
     if (!shows.length) {
-        console.log("no shows found");
         return;
     }
 
-    console.log(shows);
 
     for (var show of shows) {
         if (show.querySelector("subtitle")) {
-            console.log("subtitleAlreadyThere");
             return;
         }
 
-        console.log("adding subtitle");
         var subtitle = document.createElement("subtitle");
-        console.log(subtitle);
         subtitle.id = show.id;
         subtitle.style.color = 'gray';
         subtitle.innerHTML = placeholderText;
@@ -107,17 +100,14 @@ function loadSubtitles() {
 }
 
 const pageChanged = (mutationList, observer) => {
-    console.log("page changed");
     loadSubtitles();
 };
 
 function initChangeObserver() {
-    console.log("initialising observer");
     changeObserver = new MutationObserver(pageChanged);
     const config = { childList: true };
     changeObserver.observe(mainContainer, config);
 };
-console.log("init");
 initChangeObserver();
 loadSubtitles();
 
