@@ -21,7 +21,7 @@ function loadFromSync(subtitle) {
 
     subtitleTextFromStorage.then((res) => {
         if (typeof res[subtitle.id] !== 'undefined') {
-            subtitle.innerHTML = res[subtitle.id];
+            subtitle.textContent = res[subtitle.id];
             subtitle.style.color = 'black';
         }
     }, onSyncError);
@@ -107,7 +107,7 @@ function loadSubtitles() {
         var subtitle = document.createElement("subtitle");
         subtitle.id = show.id;
         subtitle.style.color = 'gray';
-        subtitle.innerHTML = placeholderText;
+        subtitle.textContent = placeholderText;
         subtitle.onclick = editData;
 
         loadFromSync(subtitle);
