@@ -38,6 +38,13 @@ function createInput(textElement)
         }
     }
 
+    input.onkeydown = function(e){
+        if(e.key == "Delete"){
+            input.value = placeholderText;
+            document.activeElement.blur();
+        }
+    }
+
         textElement.replaceWith(input);
     return input;
 }
@@ -45,15 +52,24 @@ function createInput(textElement)
 function editData(event) {
     var textElement = event.target;
     var input = createInput(textElement);
-    
 
     const save = function () {
         const textElementNew = document.createElement(textElement.tagName.toLowerCase());
         textElementNew.onclick = editData;
     
         var newText = input.value;
+
+        if (newText == placeholderText)
+        {
+            textElement.textContent = placeholderText;
+            textElement.style.color = 'gray';
+            input.replaceWith(textElement);
+            removeFromSync(textElement.id);
+            return;
+        }
     
-        if (newText == "" || newText == placeholderText) {
+        if (newText == "") {
+            
             input.replaceWith(textElement);
             return;
         }
