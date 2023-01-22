@@ -3,7 +3,7 @@ function listenForClicks() {
 
         if (e.target.type === "reset") {
             browser.storage.sync.clear();
-            const content = document.querySelector('#popup-content');
+            const content = document.querySelector('#resetContent');
             content.innerHTML = "Данные удалены. Обновите страницу.";
         }
     })
