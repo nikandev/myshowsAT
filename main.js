@@ -1,7 +1,13 @@
-var list = document.querySelector('div[id^="s"]');
+const placeholderText = "альтернативное название";
+const mainContainer = document.querySelector('#__nuxt');
+var changeObserver;
 
 function saveToSync(id, value) {
-    browser.storage.sync.set({[id]: value}, onSyncError);
+    browser.storage.sync.set({ [id]: value }, onSyncError);
+}
+
+function removeFromSync(id) {
+    browser.storage.sync.remove(id);
 }
 
 function onSyncError(error) {
@@ -14,27 +20,48 @@ function loadFromSync(subtitle) {
     let subtitleTextFromStorage = browser.storage.sync.get(subtitle.id);
 
     subtitleTextFromStorage.then((res) => {
-        if (typeof res[subtitle.id] !== 'undefined')
-        {
+        if (typeof res[subtitle.id] !== 'undefined') {
             subtitle.innerHTML = res[subtitle.id];
             subtitle.style.color = 'black';
         }
     }, onSyncError);
 }
 
-function editData(event) {
-    var element = event.target;
+function createInput(textElement)
+{
     var input = document.createElement("input");
-    input.setAttribute("value", element.textContent);
-    element.replaceWith(input);
+    input.setAttribute("value", "");
+    
+    input.onkeydown = function(e){
+        if(e.key == "Enter"){
+            document.activeElement.blur();
+        }
+    }
+
+        textElement.replaceWith(input);
+    return input;
+}
+
+function editData(event) {
+    var textElement = event.target;
+    var input = createInput(textElement);
+    
 
     const save = function () {
-        const previous = document.createElement(element.tagName.toLowerCase());
-        previous.onclick = editData;
-        previous.textContent = input.value;
-        input.replaceWith(previous);
-        saveToSync(element.id, input.value);
-    };
+        const textElementNew = document.createElement(textElement.tagName.toLowerCase());
+        textElementNew.onclick = editData;
+    
+        var newText = input.value;
+    
+        if (newText == "" || newText == placeholderText) {
+            input.replaceWith(textElement);
+            return;
+        }
+    
+        textElementNew.textContent = newText;
+        input.replaceWith(textElementNew);
+        saveToSync(textElement.id, newText);
+    }
 
     input.addEventListener('blur', save, {
         once: true,
@@ -42,19 +69,55 @@ function editData(event) {
     input.focus();
 }
 
-async function addSubTitles() {
-    let shows = document.querySelectorAll('div[id^="s"]');
+function loadSubtitles() {
+    console.log("loading subs");
+    var observedElement = mainContainer.querySelector('.ProfileShows-list');
 
-    for (let show of shows) {
-        let subtitle = document.createElement("subtitle");
+    if (!observedElement) {
+        console.log("no observed element");
+        return;
+    }
+
+    var shows = observedElement.querySelectorAll('div[id^="s"]');
+
+    if (!shows.length) {
+        console.log("no shows found");
+        return;
+    }
+
+    console.log(shows);
+
+    for (var show of shows) {
+        if (show.querySelector("subtitle")) {
+            console.log("subtitleAlreadyThere");
+            return;
+        }
+
+        console.log("adding subtitle");
+        var subtitle = document.createElement("subtitle");
+        console.log(subtitle);
         subtitle.id = show.id;
         subtitle.style.color = 'gray';
-        subtitle.innerHTML = "set subtitle (альтернативное название)";
+        subtitle.innerHTML = placeholderText;
         subtitle.onclick = editData;
 
         loadFromSync(subtitle);
-        await show.firstChild.after(subtitle);
+        show.firstChild.after(subtitle);
     }
 }
 
-addSubTitles();
+const pageChanged = (mutationList, observer) => {
+    console.log("page changed");
+    loadSubtitles();
+};
+
+function initChangeObserver() {
+    console.log("initialising observer");
+    changeObserver = new MutationObserver(pageChanged);
+    const config = { childList: true };
+    changeObserver.observe(mainContainer, config);
+};
+console.log("init");
+initChangeObserver();
+loadSubtitles();
+

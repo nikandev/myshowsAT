@@ -24,7 +24,7 @@
      inkscape:deskcolor="#505050"
      showgrid="false"
      inkscape:zoom="14.760854"
-     inkscape:cx="5.5552341"
+     inkscape:cx="4.5729061"
      inkscape:cy="24.117846"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
@@ -40,30 +40,6 @@
      x="2.8410332"
      y="14.257215"
      ry="8.0067606" />
-  <rect
-     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.01993;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-     id="rect5091"
-     width="29.790974"
-     height="2.2088435"
-     x="11.574586"
-     y="33.367065"
-     ry="1.1044217" />
-  <rect
-     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.01993;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-     id="rect1374"
-     width="29.790974"
-     height="2.2088435"
-     x="11.574586"
-     y="37.768154"
-     ry="1.1044217" />
-  <rect
-     style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.01993;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-     id="rect1376"
-     width="29.790974"
-     height="2.2088435"
-     x="11.574586"
-     y="42.169243"
-     ry="1.1044217" />
   <!-- your svg content -->
   <rect
      style="fill:none;stroke:#d11313;stroke-width:4.06252;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -97,26 +73,16 @@
      transform="matrix(-0.6785584,-0.73454645,-0.73454645,0.6785584,0,0)" />
   <text
      xml:space="preserve"
-     style="font-size:8px;fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:0.233986;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-     x="6.0151267"
-     y="24.559471"
-     id="text2796"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.0985px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:0.792585;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     x="4.7846684"
+     y="36.355709"
+     id="text2796"
+     transform="scale(0.90570301,1.1041147)"><tspan
        sodipodi:role="line"
        id="tspan2794"
-       x="6.0151267"
-       y="24.559471"
-       style="font-size:8px;fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:0.233986;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">MyShow</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:6.23963px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.233986;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-     x="6.4865165"
-     y="31.32156"
-     id="text3160"><tspan
-       sodipodi:role="line"
-       id="tspan3158"
-       x="6.4865165"
-       y="31.32156"
-       style="font-size:6.23963px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.233986;stroke-opacity:1">見せる</tspan></text>
+       x="4.7846684"
+       y="36.355709"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.0985px;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS Bold Italic';fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:0.792585">AT</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#0066cc;fill-opacity:1;stroke:none;stroke-width:1.1;paint-order:stroke fill markers"
@@ -124,5 +90,5 @@
      y="43.425671"
      id="text2953"><tspan
        sodipodi:role="line"
-       id="tspan2951"></tspan></text>
+       id="tspan2951" /></text>
 </svg>
