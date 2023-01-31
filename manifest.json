@@ -24,8 +24,9 @@
 
   "content_scripts": [
     {
-      "matches": ["https://myshows.me/*"],
-      "js": ["main.js"]
+      "matches": ["https://myshows.me/profile/"],
+      "js": ["main.js"],
+      "run_at": "document_start"
     }
   ],
 
