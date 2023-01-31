@@ -44,6 +44,11 @@ function createInput(textElement) {
         }
     }
 
+    if (textElement.textContent != placeholderText)
+    {
+        input.value = textElement.textContent;
+    }
+
     textElement.replaceWith(input);
     return input;
 }
@@ -51,7 +56,7 @@ function createInput(textElement) {
 function editData(event) {
     var textElement = event.target;
     var input = createInput(textElement);
-
+    
     const save = function () {
         const textElementNew = document.createElement(textElement.tagName.toLowerCase());
         textElementNew.onclick = editData;
