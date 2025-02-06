@@ -127,10 +127,10 @@ function editData(event) {
 
 function loadSubtitles() {
     logToConsole("Loading subtitles");
-    var showsList = mainContainer.querySelector('.ProfileShows-list');
+    var showsList = mainContainer.querySelector('.ProfileShows__list');
 
     if (!showsList) {
-        logToConsole("No .ProfileShows-list found", "error");
+        logToConsole("No .ProfileShows__list found", "error");
         return;
     }
 
