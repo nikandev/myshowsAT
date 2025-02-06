@@ -2,7 +2,7 @@
 
   "manifest_version": 3,
   "name": "Myshows Alternative Titles",
-  "version": "4.0",
+  "version": "5.0",
 
   "description": "Firefox add-on that adds the ability to add alternative titles to your shows",
   "homepage_url": "https://github.com/nikandev/myshowsAT",
