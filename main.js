@@ -55,7 +55,6 @@ function loadFromSync(subtitle) {
     subtitleTextFromStorage.then((res) => {
         if (typeof res[subtitle.id] !== 'undefined') {
             subtitle.textContent = res[subtitle.id];
-            subtitle.style.color = 'black';
         }
     }, onSyncError);
 }
